@@ -69,3 +69,70 @@ CONCATENAÇÃO DE STRINGS: você pode unir (concatenar) strings de diversas form
 let ola = "Olá";
 let mundo = "Mundo";
 let olaMundo = ola+mundo;
+
+2) Utilizando o String.concat
+
+let ola = "Olá";
+let mundo = "Mundo";
+let olaMundo = ola.concat(mundo);
+
+este método também permite concatenar diversas strings
+
+let ola = "Olá";
+let mundo = "Mundo";
+let olaMundo = ola.concat(mundo," frase ",ola);
+
+3) Template de Strings: o template de Strings é uma nova forma de concatenação e utiliza o ${expressão} e a crase ao redor da string
+
+let ola = "Olá";
+let mundo = "Mundo";
+
+BOOLEANOS
+são tipos de dados que possuem apenas dois valores
+TRUE: Verdadeiro
+FALSE: Falso
+
+let verdadeiro = true;
+let falso = false;
+
+os valores true e false não são escritos entre aspas
+CUIDADO! O JS entende certos valores dos outros tipos de dados como true ou false
+
+COMPARAÇÔES
+Uma das formas mais comuns de se obter valores booleanos é através de comparações
+
+//true
+let comparacao = 1 ==1;
+
+//false
+let comparacao2 = 1 > 5;
+
+//true
+let comparacaoString = "banana" == "banana";
+
+COMPARAÇÔES:
+se você testar 1 == "1", obterá true. Para fazer comparações que levam em consideração o valor e o tipo do dado, utilize ===
+
+ARRAY (vetor)
+é uma lista ou coleção de dados que pode ser acessada por indice
+para criar um vetor vazio basta criar uma variável e atribuir [] a ela
+
+let vetor = [];
+
+atribuindo valores: você pode criar um vetr com seus valores separados por virgula
+
+let vetor = [1, 22, 0, 100];
+
+você pode adicionar valores de qualquer tipo no vetor
+
+let vetor = [1, "olá mundo", true, [1,2,3]];
+
+ACESSANDO VALORES:
+Os valores podem ser acessados através de seu índice
+
+let vetor = [1, 22, 0, 100];
+
+//exibirá 22
+console.log(vetor[1]);
+
+observe que o índice começa no 0. Então o primeiro item está na posição 0, o segundo na posição 1 e assim por diante
