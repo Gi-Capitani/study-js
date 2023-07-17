@@ -136,3 +136,106 @@ let vetor = [1, 22, 0, 100];
 console.log(vetor[1]);
 
 observe que o índice começa no 0. Então o primeiro item está na posição 0, o segundo na posição 1 e assim por diante
+
+alterando e atribuindo valores pelo índice:
+com o índice, você pode:
+
+a) alterar um valor existente;
+b) inserir um novo valor em uma posição específica;
+
+let vetor = [11, 21, 23, 433, 50];
+//altera o valor da primeira posição
+vetor[0] = 9000;
+//insere um valor após o ultimo elemento
+vetor[5] = 7;
+
+NULL:
+O null é um tipo de dado especial, ele representa a falta de valor de qualquer outro tipo de dado
+
+let x  = null;
+let y = 1;
+y = null;
+
+UNDEFINED:
+este tipo de dado aparece quando criamos uma variável e tentamos acessar seu valor antes de ter atribuído algo a ela
+
+let x;
+console.log(x);
+
+Undefined !== Null:
+undefined e null são diferentes
+console.log(null === undefined);
+
+resumidamente, isto ocorre pois null ainda é um valor e undefined é quando o JS não sabe qual o tipo de dado
+
+OBJETO:
+É um tipo de dado composto pelos outros tipos. com ele, podemos organizar informações relacionadas em uma variável
+
+let carro = {
+    rodas: 4,
+    portas: 2,
+    nome: "um carro",
+    aVenda: true
+};
+
+criação: um objeto vazio é bem simples de criar
+
+let carro = {};
+
+no caso de um objeto com propriedades (variáveis), fazemos assim:
+
+let carro = {
+    rodas: 4,
+    nome: "carro"
+};
+
+caso você já tenha criado o objeto e queira adicionar um novo, você pode fazer de duas formas
+
+carro.portas = 2;
+carro["portas"] = 2;
+
+note que se você usar a segunda opção, precisa ter uma String dentro dos []
+
+a alteração de dados funciona da mesma forma
+
+carro.rodas = 5;
+carro.portas = 4;
+carro.nome = "carrão";
+
+carro["rodas"] = 3;
+carro["portas"] = 2;
+carro["nome"] = "carrinho";
+
+FUNÇÕES:
+As funções são utilizadas para criarmos uma sequencia de operações para serem executadas
+
+let olaMundo = function(){
+    console.log("Olá Mundo");
+    console.log("Olá Mundo novamente");
+    console.log("Olá Mundo mais uma vez");
+}
+
+olaMundo();
+
+note que para fazer a função executar, você precisa chama-la com os parênteses
+
+outra forma de criar uma função é chamando o function com o nome dela
+
+function olaMundo(){
+    console.log("Olá Mundo");
+    console.log("Olá Mundo novamente");
+    console.log("Olá Mundo mais uma vez");
+}
+
+olaMundo();
+
+também é possível passar valores para a função acessar
+
+let somar = function(valor1, valor2){
+    let resultado = valor1 + valor2;
+    console.log(resultado);
+}
+
+somar(1,2);
+somar(4,4);
+somar(99,1);
