@@ -239,3 +239,54 @@ let somar = function(valor1, valor2){
 somar(1,2);
 somar(4,4);
 somar(99,1);
+
+replique este código no seu computador para que você possa ver os resultados
+
+o último recurso que estaremos vendo da função (por enquanto) é o comando return
+
+let somar = function(valor1, valor2){
+    let resultado = valor1 + valor2;
+    return resultado;
+}
+
+a primeira coisa que você precisa saber é que o return para a função e devolve um valor
+
+então, estes estão corretos:
+let somar = function(valor1, valor2){
+    let resultado = valor1 + valor2;
+    return resultado;
+}
+
+let subtrair = function(valor1, valor2){
+    console.log(valor1 - valor2);
+    return valor1 - valor2;
+}
+
+e estes não executarão corretamente
+
+let somar = function(valor1, valor2){
+    return valor1 + valor2;
+    console.log(1);
+}
+
+let subtrair = function(valor1, valor2){
+    valor2 = valor2 + 5;
+    return valor1 - valor2;
+    valor1 = 1;
+}
+
+agora que você sabe como usar o return, vamos falar sobre a utilidade dele
+
+let somar = function(valor1, valor2){
+    return valor1 + valor2;
+}
+
+let resultado = somar(10,10);
+
+uma função com return devolve um valor que podemos guardar em uma variável
+
+o return faz com que seja uma ferramenta excelente para tornarmos nosso código mais simples de entender
+conforme formos avançando no curso, utilizaremos cada vez mais as funções em nosso código
+
+CURIOSIDADE:
+caso você não coloque o return, por default as funções devolvem undefined
