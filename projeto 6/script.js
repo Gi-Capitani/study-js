@@ -290,3 +290,26 @@ conforme formos avançando no curso, utilizaremos cada vez mais as funções em 
 
 CURIOSIDADE:
 caso você não coloque o return, por default as funções devolvem undefined
+
+CONDICIONAIS:
+IF: O if(se) é um comando que permite executar um código apenas se uma condição entre parênteses for verdadeira (true)
+
+let x = 1;
+if(x == 1){
+    //Executa o código
+}
+
+let disponivel = true;
+let quantidade = 5;
+
+if(quantidade > 0 && disponivel){
+    console.log("produto disponivel para venda");
+}
+
+ELSE: o comando ELSE (SENÃO) serve para executarmos um trecho de código qusndo o IF for falso
+
+if(nome == "Maria"){
+    console.log("Acesso permitido")
+}else{
+    console.log("Acesso Negado!")
+}
